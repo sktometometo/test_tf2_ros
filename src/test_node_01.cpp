@@ -11,4 +11,6 @@ int main( int argc, char** argv )
 
     tf2_ros::Buffer tf_buffer(ros::Duration(max_duration));
     tf2_ros::TransformListener tf_listener(tf_buffer,nh,true);
+
+    return 0;
 }

@@ -9,4 +9,6 @@ int main( int argc, char** argv )
 
     tf2_ros::Buffer tf_buffer(ros::Duration(10.0));
     tf2_ros::TransformListener tf_listener(tf_buffer);
+
+    return 0;
 }
