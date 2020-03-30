@@ -19,9 +19,27 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(test_node src/test_node.cpp)
+add_executable(test_node_00 src/test_node_00.cpp)
+target_link_libraries(test_node_00
+  ${catkin_LIBRARIES}
+)
 
-## Specify libraries to link a library or executable target against
-target_link_libraries(test_node
+add_executable(test_node_01 src/test_node_01.cpp)
+target_link_libraries(test_node_01
+  ${catkin_LIBRARIES}
+)
+
+add_executable(test_node_02 src/test_node_02.cpp)
+target_link_libraries(test_node_02
+  ${catkin_LIBRARIES}
+)
+
+add_executable(test_node_03 src/test_node_03.cpp)
+target_link_libraries(test_node_03
+  ${catkin_LIBRARIES}
+)
+
+add_executable(test_node_04 src/test_node_04.cpp)
+target_link_libraries(test_node_04
   ${catkin_LIBRARIES}
 )
